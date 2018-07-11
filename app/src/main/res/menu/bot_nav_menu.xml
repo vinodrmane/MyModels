@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recents"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"/>
+    <item
+        android:id="@+id/favorites"
+        android:title="Add"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:id="@+id/nearby"
+        android:title="Call"
+        android:icon="@android:drawable/ic_menu_call"/>
+</menu>

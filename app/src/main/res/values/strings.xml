@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Models</string>
+    <string name="facebook_app_id">1454671177989741</string>
+    <string name="fb_login_protocol_scheme">fb1454671177989741</string>
+    <string name="google_map_api_key">AIzaSyAG_5YvFQvwDmzTtNLxyDqV9iWoqS8Svl8</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

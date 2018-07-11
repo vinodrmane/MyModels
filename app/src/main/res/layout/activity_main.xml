@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.vinod.mymodels.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone no" />
+
+        <EditText
+            android:id="@+id/edit_phone_no_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Verify no" />
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Verify No" />
+
+        <Button
+            android:id="@+id/btn_verify1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Verify No" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_google_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btn_fb_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btn_custom_fb_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook Login" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Map" />
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
