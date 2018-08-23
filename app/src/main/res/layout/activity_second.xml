@@ -18,6 +18,11 @@ tools:context="com.example.vinod.mymodels.MainActivity">
         android:layout_height="wrap_content"
         android:text="Log Out"
         android:id="@+id/btn_logout"/>
+    <ListView
+        android:id="@+id/pagination_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
 </LinearLayout>
 
 

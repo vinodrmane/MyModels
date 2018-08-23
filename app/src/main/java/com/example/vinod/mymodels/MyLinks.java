@@ -6,6 +6,11 @@ package com.example.vinod.mymodels;
 
 public class MyLinks {
         /*
+All fileUtility : https://github.com/iPaulPro/aFileChooser/blob/master/aFileChooser/src/com/ipaulpro/afilechooser/utils/FileUtils.java
+        for Sql query : https://www.1keydata.com/sql/sqlorderby.html
+        Retrofit Singleton : https://gist.github.com/h4h13/d6fb27e81bfae6f2bf6d0c7a059a3f7b
+
+      https://github.com/Suleiman19/Android-Material-Design-for-pre-Lollipop
           how-master-android-what-developers-can-learn-21-apps
         https://android.jlelse.eu/tools-attributes-hidden-gems-of-android-studio-d7451b194e0b
         https://blog.stylingandroid.com

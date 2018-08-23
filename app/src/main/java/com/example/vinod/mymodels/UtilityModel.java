@@ -1,7 +1,10 @@
 package com.example.vinod.mymodels;
 
+import android.content.Context;
 import android.net.Uri;
 import android.widget.Toast;
+
+import java.io.File;
 
 import static com.facebook.FacebookSdk.getApplicationContext;
 
@@ -35,4 +38,6 @@ public class UtilityModel {
                     }
                 });*/
     }
+
+
 }

@@ -48,6 +48,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 OrderRecyclerViewHolder orderRecyclerViewHolder = (OrderRecyclerViewHolder) holder;
                 Order order = model.getOrder();
                 orderRecyclerViewHolder.TvId.setText(order.id);
+             //  orderRecyclerViewHolder.setListener();   2nd way click
                 break;
             case Model.PRODUCT_TYPE:
                 ProdoctRecyclerViewHolder prodoctRecyclerViewHolder = (ProdoctRecyclerViewHolder) holder;

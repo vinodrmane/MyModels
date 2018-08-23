@@ -1,5 +1,6 @@
 package com.example.vinod.mymodels;
 
+import android.app.Application;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -48,9 +49,20 @@ public class Database {
         mDatabase.endTransaction();
     }
 
+    public void updateProduct(String value){
+        String sql="UPDATE "+DataHelper.TABLE_BOX_OFFICE+" SET "+DataHelper.COLUMN_TITLE+"=VALUE WHERE "+DataHelper.COLUMN_UID +"=?";
+        //compile the statement and start a transaction
+        SQLiteStatement statement = mDatabase.compileStatement(sql);
+        mDatabase.beginTransaction();
+        statement.bindString(1, value);
+        statement.execute();
+        mDatabase.setTransactionSuccessful();
+        mDatabase.endTransaction();
+    }
+
     public ArrayList<Product> readProducts(int table) {
 
-        /*  String selectQuery = "SELECT  * FROM " + TABLE_STUDENTS;
+          /*String selectQuery = "SELECT  * FROM " + TABLE_STUDENTS;
           SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);*/
         ArrayList<Product> listProducts = new ArrayList<>();
@@ -125,6 +137,8 @@ public class Database {
 
   public class MyApplication extends Application {
 
+ // how to use database in activity  example
+
  private static MyApplication sInstance;
  private static Database mDatabase;
 
@@ -153,7 +167,7 @@ public static MyApplication getInstance() {
 
     mListMovies = MyApplication.getWritableDatabase().readMovies(Database.BOX_OFFICE);
 
-    */
+*/
 
     public void deleteProducts(int table) {
         mDatabase.delete((table == BOX_OFFICE ? DataHelper.TABLE_BOX_OFFICE : DataHelper.TABLE_UPCOMING), null, null);
